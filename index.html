@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrico Deiana - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>RANJITH</h1>
+        <h2>CREATING DELIGHTFUL experiences for your business</h2>
+        <p>I’m an Indian Product designer based in microsoft, currently working at software company. Cool, isn't it?<br>
+        I’m proud to be a Jury member at Awwwards and I work remotely with private clients and companies, delivering high quality mobile apps and websites for any type of business idea.</p>
+    </header>
+
+    <section class="portfolio">
+        <h2>PORTFOLIO</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>Sports Bros</h3>
+                <p>UI DESIGN • VISUAL IDENTITY • 3D</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Olympus Gods</h3>
+                <p>WEB DESIGN • CREATIVE DIRECTION</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Crypto</h3>
+                <p>UI DESIGN • MOTION DESIGN • 3D</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Elite Surf Academy</h3>
+                <p>UI DESIGN • WEB DEVELOPMENT</p>
+            </div>
+        </div>
+        <a href="#" class="view-projects">VIEW ALL PROJECTS 🔥</a>
+    </section>
+
+    <section class="playground">
+        <p>Failing / Dreaming / Talking / Sleeping / Failing / Dreaming / Talking / Sleeping / ...</p>
+    </section>
+
+    <section class="honors-awards">
+        <h2>Honors and Awards</h2>
+        <ul>
+            <li>2020: The Time is Now - Pitti Uomo & Greenpeace (Workshop)</li>
+            <li>2021: Awwwards Jury (Jury Member)</li>
+            <li>2021: Qclay Team - Dribbble (Talented Team)</li>
+            <li>2022: Awwwards (Honorable Mention)</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Let's create something MEANINGFUL TOGETHER (but not Forever)</h2>
+        <a href="mailto:contact@enricodeiana.com" class="contact-link">CONTACT ME 🤟🏼</a>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank">Instagram Icon</a>
+            <a href="#" target="_blank">Dribbble Icon</a>
+            <a href="#" target="_blank">Awwwards Icon</a>
+            <a href="#" target="_blank">Webflow Icon</a>
+            <a href="#" target="_blank">Upwork Icon</a>
+        </div>
+        <div class="documents">
+            <a href="#" target="_blank">RESUME</a>
+            <a href="#" target="_blank">PDF FOLIO</a>
+        </div>
+        <p>© Enrico Deiana 2022<br>Made in Webflow</p>
+    </footer>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate");
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.animated').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

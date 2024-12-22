@@ -1,0 +1,201 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #000;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+header h2 {
+    font-size: 1.75em;
+    margin: 10px 0;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+header p {
+    font-size: 1.1em;
+    margin: 20px 0 0;
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+.portfolio {
+    background: #111;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio-item h3 {
+    margin: 0 0 15px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.view-projects {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 30px;
+    background: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-projects:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
+.playground {
+    background: #1f1c2c;
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.honors-awards {
+    background: #111;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.honors-awards ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.honors-awards li {
+    margin: 20px 0;
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+.contact {
+    background: #1f1c2c;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.contact h2 {
+    margin: 0 0 30px;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+footer .social-links,
+footer .documents {
+    margin: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0073e6;
+}
+
+footer p {
+    margin: 20px 0 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes neonGlow {
+    from { text-shadow: 0 0 5px #fff, 0 0 10px #0073e6, 0 0 20px #0073e6, 0 0 40px #0073e6, 0 0 80px #0073e6; }
+    to { text-shadow: 0 0
